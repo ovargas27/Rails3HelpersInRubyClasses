@@ -29,4 +29,12 @@ class Contact
   def to_param
     nil
   end
+
+  def send_email
+    if self.valid?
+      #code to send email
+    else
+      return false
+    end
+  end
 end
