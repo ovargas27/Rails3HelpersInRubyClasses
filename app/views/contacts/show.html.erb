@@ -1,11 +1,10 @@
 <h1>Contact us</h1>
-<form action="/contact" method="post">
-  <label for="contact_name">Name: </label> 
-  <input id="contact_name" name="contact[name]" type="text" /> 
-  <label for="contact_email">email</label> 
-  <input id="contact_email" name="contact[email]" type="text" /> 
-  <label for="contact_comment">Comment</label> 
-  <textarea cols="40" id="contact_comment" name="contact[comment]" rows="20"></textarea> 
-  <input id="contact_submit" name="commit" type="submit" value="Send" /> 
-</form>
-
+<%= form_for @contact do |form|%>
+  <%= form.label :name, 'Name' %>
+  <%= form.text_field :name %>
+  <%= form.label :email, 'email' %>
+  <%= form.text_field :email %>
+  <%= form.label :comment %>
+  <%= form.text_area :comment %>
+  <%= form.submit 'Send' %>
+<% end %>

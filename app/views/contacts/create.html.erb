@@ -1,2 +1,7 @@
 <h1>Your contact request has been sent succesfully</h1>
 <h2>Thank you!</h2>
+<%= div_for(@contact, :class => "foo") do %>
+  <%= content_tag :p, @contact.name %>
+  <%= content_tag :p,  @contact.email %>
+  <%= content_tag :p, @contact.comment %>
+<% end %>
