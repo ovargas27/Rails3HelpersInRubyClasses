@@ -1,0 +1,5 @@
+Rails 3 Views Helpers are very useful and save us a lot of work, but yours models should be ActiveRecord::Base child class. In some cases, you don't need to save records in a Database so What happen in this case? Does make sense use ActiveRecord and its overload only to use helpers? the first logic answer is NO.
+
+In this repo we'll create an easy example of how to write Ruby classes compatibles with ActionView helpers.
+
+Hope this may help you
