@@ -1,3 +1,10 @@
+PATH
+  remote: /Users/omarvargas/Work/views-helpers
+  specs:
+    views-helpers (0.0.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -71,3 +78,4 @@ PLATFORMS
 DEPENDENCIES
   rails (= 3.0.4)
   sqlite3
+  views-helpers!
