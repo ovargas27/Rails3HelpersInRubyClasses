@@ -1,4 +1,4 @@
 NoActiveRecord::Application.routes.draw do
-  root :to => 'contact#show'
+  root :to => 'contacts#show'
   resource :contacts
 end
